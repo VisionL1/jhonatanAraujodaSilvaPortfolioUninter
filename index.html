@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- menu de navegação do site onde pode ser redirecionado para a área de desejo do usuário -->
+  <nav class="navbar" id="navbar">
+    <ul class="link-grupos">
+      <li class="link active"><a href="#home">home</a></li>
+      <li class="link active"><a href="#sobre">Sobre</a></li>
+      <li class="link active"><a href="#formacao">Formações</a></li>
+      <li class="link active"><a href="#contato">contato</a></li>
+    </ul>
+  </nav>
+<!-- Seção incial do site onde sempre será a primeira a aparecer -->
+  <section class="home-section active" id="home">
+    <h1 class="hero-head" id="head">Portfolio</h1>
+    <img src="/img//geneated_image2.jpg" alt="">
+  </section>
+<!-- Seção Sobre -->
+<section class="sobre-section active" id="sobre">
+  <div class="sobre">
+    <div class="sobre-img-container">
+      <img src="/img/home.jpeg" class="sobre-img" alt="">
+       <!-- Botão com redirecionamento para o linkedin -->
+      <a class="cv-redirect-btn" href="https://www.linkedin.com/in/dev-jhonatan-araujo/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+    </div>
+    <p class="sobre-sobre">Apaixonado por computadores desde criança, sempre gostei de jogar e ver filmes, no final do ensino médio tomei a decisão de entrar na área de programação, comecei estudando front-end como a maior parte das pessoas mas não foi algo que me chamou tanto atenção, então decidi mudar para back-end e começar a estudar Java, estudando com amigos me apresentaram a área de ciência de dados, me chamou bastante atenção e é a área que estou estudando atualmente a pequenos passos mas espero atuar nessa área no futuro</p>
+  </div>
+</section>
+<!-- Seção de formação -->
+  <section class="formacao-section active" id="formacao">
+  <div class="timeline">
+    <h1 class="timeline-head" id="head">Formações e experiências</h1>
+    <!-- Card de informação sobre Experiências e formações -->
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Colégio Estadual Pedro Fernandes</h1>
+        <p class="card-detalhes">Escola Estadual do Rio de Janeiro onde conclui o ensino médio</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Alura</h1>
+        <p class="card-detalhes">na Alura estudei na maior parte do tempo sobre front-end toda a parte de criação de sites, estilização, aprendi a utilizar html, css, e javascript e alguns frameworks dessas linguagens</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Programa Oracle Next Education</h1>
+        <p class="card-detalhes">No programa Oracle tive toda a formação para poder começar a entrar na área com aulas para tornar o aluno em um desenvolvedor full stack, no curso aprendi a manipular a parte server de um site e construção de um sistema via nuvem com oracle cloud</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Google ML Study Jam</h1>
+        <p class="card-detalhes">O ML Study Jam me apresentou a área de ciencia de dados na qual me foco atualmente, consegui aprender diversas coisas no curso, criação e manipulação de tabelas e diagramas, utilizar machine learning</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Uninter</h1>
+        <p class="card-detalhes">Atualmente Cursando Engenharia de Software, na faculdade posso aprender também a parte empresarial de leis e normas assim como criar projetos seguindo o padrão do mercado</p>
+      </div>
+    </div>
+</section>
+<!-- Seção de contato -->
+<section class="contato-section active" id="contato">
+  <h1 class="contato-head" id="head">Contato</h1>
+  <form class="form-contato">
+    <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome">
+    <input type="text" name="email" id="email" autocomplete="off" placeholder="Email">
+    <textarea name="assunto" id="assunto" placeholder="assunto" autocomplete="off"></textarea>
+    <button type="Enviar" class="enviar-form-btn">Contato</button>
+  </form>
+</section>
+
+</body>
+<script src="/app.js"></script>
+</html>
