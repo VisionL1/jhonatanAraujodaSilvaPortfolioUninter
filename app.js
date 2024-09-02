@@ -24,16 +24,15 @@ links.forEach((link, i) => {
 
 //Sistema para esconder ou revelar o menu utilizando o scroll do mouse
 var scrollMouse;
-
 navbar = document.getElementById('navbar');
 window.addEventListener('scroll', function(){
     // toda vez que usar o scroll do mouse essa função será chamada
-    var scrollUp = window.pageYOffset || document.documentElement.scrollTop;
-    if(scrollUp > scrollMouse) {
-        navbar.style.top='-80px';
-    }
-    else {
-        navbar.style.top='0';
-    }
-    scrollMouse = scrollUp;
+var scrollUp = window.pageYOffset || document.documentElement.scrollTop;
+if(scrollUp > scrollMouse) {
+    navbar.style.top='-80px';
+}
+else {
+    navbar.style.top='0';
+}
+scrollMouse = scrollUp;
 });
